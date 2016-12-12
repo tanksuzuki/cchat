@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/bundle.css">
+<link rel="stylesheet" href="/css/emoji.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+    <section class="hero is-fullheight">
+        <div class="hero-head">
+            <header class="nav">
+                <div class="nav-center">
+                    <span class="nav-item">
+                        <a class="button is-link">
+                            <span class="icon is-marginless"><i class="fa fa-github"></i></span>
+                    </a>
+                    </span>
+                </div>
+            </header>
+        </div>
+
+        <div class="hero-body">
+            <list></list>
+        </div>
+        <div class="hero-foot">
+            <msginput></msginput>
+        </div>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.1.0/superagent.min.js"></script>
+<script src="/js/md5.min.js"></script>
+<script src="/js/timeago.min.js"></script>
+<script src="/js/emoji.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.6.7/riot+compiler.min.js"></script>
+<script src="/tags/msginput.tag" type="riot/tag"></script>
+<script src="/tags/list.tag" type="riot/tag"></script>
+<script>
+    let obs = riot.observable();
+    riot.mount('*')
+</script>
